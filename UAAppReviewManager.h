@@ -255,8 +255,8 @@ typedef BOOL (^UAAppReviewManagerShouldIncrementBlock)(void);
 + (void)setOpensInStoreKit:(BOOL)opensInStoreKit;
 
 #endif
-
-
++ (UAAppReviewManager *)defaultManager;
+- (void)showRatingAlert;
 /*
  * Tells UAAppReviewManager that the app has launched and that the 'uses'
  * count should be incremented. You should call this method at the end of your
